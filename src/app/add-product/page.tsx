@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'We make your wallet cry',
 }
 
-export async function addProduct(formData: FormData){
+async function addProduct(formData: FormData){
   "use server";
 
   const session = await getServerSession(authOptions);
